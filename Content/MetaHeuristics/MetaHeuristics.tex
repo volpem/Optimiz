@@ -90,16 +90,29 @@
 \subsubsection{Selektion \skript{15}}
   Probabilistische (Zufallsprinzip, z.B. \em Roulette-Wheel\em ) oder deterministische (nach Fitnesswerten, z.B. nur die besten; z.B. \em Binäre Wettkampfselektion\em ) Selektion. Problem bei beiden: Die besten Gene können verloren gehen, deshalb werden meist das beste oder die besten Individuen übernommen.
   
+  \paragraph{Tournament Selection}\mbox{}\\
+  \includegraphics[width=8cm]{./Content/MetaHeuristics/tournament_selection}
+
+
+  
 \subsubsection{Rekombination \skript{16}}
   \begin{tabularx}{\textwidth}{p{9cm} p{9cm}}
-    \em One-Point Crossover\em : Der "`Chromosomen"'-String wird an zufälliger Stelle getrennt und neu rekombiniert: 
-      & \em Two-Point Crossover\em : Der "`Chromosomen"'-String wird an zwei zufälligen Stellen getrennt und neu rekombiniert: \\
+    \em \paragraph{One-Point Crossover}\em : Der "`Chromosomen"'-String wird an zufälliger Stelle getrennt und neu rekombiniert: 
+      & \em \paragraph{Two-Point Crossover}\em : Der "`Chromosomen"'-String wird an zwei zufälligen Stellen getrennt und neu rekombiniert: \\
     \includegraphics[width=8cm]{./Content/MetaHeuristics/GeneticAlgorithms_OnePointCrossover}
       & \includegraphics[width=8cm]{./Content/MetaHeuristics/GeneticAlgorithms_TwoPointCrossover} \\ \\
-    \em $k$-Point Crossover\em : Verallgemeinerung von One-/Two-Point Crossover.
-      & \em Uniform Crossover\em : $k$-Point Crossover mit Grenzwert $k \rightarrow n$, hier wird also jedes Bit zufällig kombiniert.
+    \em \textbf{Adjancency method}\em
+      & \em \textbf{Uniform Crossover}\\
+      \includegraphics[width=8cm]{./Content/MetaHeuristics/uniform_crossover}
+      & \includegraphics[width=8cm]{./Content/MetaHeuristics/uniform_crossover}\\
+  
+      
   \end{tabularx}
-   
+
+ \newpage
+\textbf{PMX Crossover}\\
+\includegraphics[width=0.3\textwidth]{./Content/MetaHeuristics/pmx_crossover}\\
+
   
 \subsubsection{Mutation \skript{18}}
   \begin{minipage}{7.75cm}
@@ -114,7 +127,6 @@
     \includegraphics[width=11cm]{./Content/MetaHeuristics/GeneticAlgorithms_Mutation}
   \end{minipage}
   
-  \newpage
   
 \subsubsection{Ersetzungsschemata \skript{19}}
 
@@ -164,7 +176,7 @@
   
   ACO liefert schnell gute Resultate für kombinatorische Probleme, ist aber nicht für Parameteroptimierung geeignet.\\
   
-  \lstinputlisting[language=Java]{./Content/MetaHeuristics/ACO2.java}
+%  \lstinputlisting[language=Java]{./Content/MetaHeuristics/ACO2.java}
   
 \subsection{Particle Swarm Optimization \skript{23}}
   Speziell für Parameteroptimeriung geeignet: Jedes Individuum versucht zwar, sein lokales Optimum zu finden, gleichzeitig lernt es aber von den seinen eigenen Erfahrungen und denen des Schwarms.
@@ -175,6 +187,6 @@
 
 \newpage
   
-  \lstinputlisting[language=Java]{./Content/MetaHeuristics/PSO2.java}
+%  \lstinputlisting[language=Java]{./Content/MetaHeuristics/PSO2.java}
   
 
